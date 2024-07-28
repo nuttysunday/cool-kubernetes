@@ -1,7 +1,7 @@
 server/node_modules
 
-serviceA/node_modules
+service_a/node_modules
 
-serviceB/node_modules
+service_b/node_modules
 
 proxy-server/node_modules
