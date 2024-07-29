@@ -13,7 +13,14 @@ spec:
         app: monolithic-architecture
     spec:
       containers:
-      - name: monolithic-architecture
+      - name: monolithic-container
         image: sundaydied/monolithic_architecture:latest
+        resources:
+          requests:
+            cpu: "25m"    # Requesting 200 milliCPU
+            memory: "32Mi" # Requesting 256 MiB of memory
+          limits:
+            cpu: "500m"    # Limiting to 500 milliCPU
+            memory: "256Mi" # Limiting to 512 MiB of memory
         ports:
         - containerPort: 3000

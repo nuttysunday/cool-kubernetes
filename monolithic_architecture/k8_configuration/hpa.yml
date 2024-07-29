@@ -1,0 +1,12 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: monolithic-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: monolithic-architecture
+  minReplicas: 5
+  maxReplicas: 15
+  targetCPUUtilizationPercentage: 75
