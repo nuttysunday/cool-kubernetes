@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monolithic-architecture
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monolithic-architecture
+  template:
+    metadata:
+      labels:
+        app: monolithic-architecture
+    spec:
+      containers:
+      - name: monolithic-architecture
+        image: sundaydied/monolithic_architecture:latest
+        ports:
+        - containerPort: 3000

@@ -4,3 +4,7 @@
 
 2. Distributing them into microservices so that they can be scaled independently.
 
+3. Autoscale each service depending upon the load.
+
+#grafana
+#kubernetes
