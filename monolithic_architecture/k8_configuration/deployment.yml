@@ -17,8 +17,10 @@ spec:
         image: sundaydied/monolithic_architecture:latest
         resources:
           requests:
-            cpu: "100m"  
+            memory: "128Mi"
+            cpu: "100m"
           limits:
-            cpu: "2000m" 
+            memory: "256Mi"
+            cpu: "500m"
         ports:
         - containerPort: 3000

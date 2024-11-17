@@ -7,7 +7,7 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: monolithic-architecture
-  minReplicas: 5
+  minReplicas: 3
   maxReplicas: 15
   metrics:
   - type: Resource
@@ -15,7 +15,13 @@ spec:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 50
+        averageUtilization: 40
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 40
   behavior:
     scaleDown:
       stabilizationWindowSeconds: 30 
