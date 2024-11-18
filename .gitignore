@@ -1,8 +1,8 @@
 microservices_architecture/server/node_modules
 
-microservices_architecture/service_a/node_modules
+microservices_architecture/service-a/node_modules
 
-microservices_architecture/service_b/node_modules
+microservices_architecture/service-b/node_modules
 
 microservices_architecture/proxy-server/node_modules
 
