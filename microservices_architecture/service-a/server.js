@@ -10,7 +10,8 @@ morgan.token("custom", (req, res) => {
 
 app.use(morgan(":custom - :response-time ms"));
 
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const delay = (ms) => new Promise((resolve) => 
+setTimeout(resolve, ms));
 
 const serviceA = async () => {
     console.log("Service A triggered");
